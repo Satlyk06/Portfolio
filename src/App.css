@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-winter-bg: #0f172a;
+  --color-winter-accent: #38bdf8;
+  --color-winter-particle: #e2e8f0;
+  
+  --color-spring-bg: #064e3b;
+  --color-spring-accent: #34d399;
+  --color-spring-particle: #6ee7b7;
+  
+  --color-summer-bg: #7c2d12;
+  --color-summer-accent: #fbbf24;
+  --color-summer-particle: #fde68a;
+  
+  --color-autumn-bg: #451a03;
+  --color-autumn-accent: #fb923c;
+  --color-autumn-particle: #fdba74;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(30px, -30px); }
+  50% { transform: translate(-20px, 20px); }
+  75% { transform: translate(20px, 10px); }
+}
